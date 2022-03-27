@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html class="scroll-smooth snap-start overflow-y-scroll">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> LetTrip </title>
+	<style>
+		@import url("./public/css/main.css");
+	</style>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.all.min.js"></script>
+</head>
+<body>
+	<!--navbar section-->
+	<nav class="bg-gray-800 p-2 flex justify-between text-white drop-shadow-lg sticky top-0 z-[200]">
+		<section class="p-2 rounded text-green-400">
+			<i class="ri-ancient-gate-fill text-2xl mr-2"></i><span class="text-3xl">LetTrip</span>
+		</section>
+		<section class="gap-3 justify-between items-center p-2 lg:flex hidden">
+			<a href="#who-we-are" class="p-1 hover:text-green-400 transition duration-200">Who We Are?</a>
+			<a href="#some-place" class="p-1 hover:text-green-400 transition duration-200">Some Visited Places</a>
+			<a href="#our-skills" class="p-1 hover:text-green-400 transition duration-200">Our Skills</a>
+			<a href="#ratings" class="p-1 hover:text-green-400 transition duration-200">Ratings</a>
+			<a href="#contact-us" class="p-1 hover:text-green-400 transition duration-200">Contact Us</a>
+		</section>
+		<!-- This section only appears if the width of the screen is medium-->
+		<section id="hamburgerMenu" class="hidden absolute z-[-12] top-0 left-0 w-full h-screen flex flex-col gap-4 justify-center items-center bg-gray-800 transition duration-200">
+			<a href="#who-we-are" class="p-1 hover:text-green-400 transition duration-200">Who We Are?</a>
+			<a href="#some-place" class="p-1 hover:text-green-400 transition duration-200">Some Visited Places</a>
+			<a href="#our-skills" class="p-1 hover:text-green-400 transition duration-200">Our Skills</a>
+			<a href="#ratings" class="p-1 hover:text-green-400 transition duration-200">Ratings</a>
+			<a href="#contact-us" class="p-1 hover:text-green-400 transition duration-200">Contact Us</a>
+		</section>
+		<section id="hamburger" class="lg:hidden flex flex-col gap-3 cursor-pointer p-2 lg:hidden group">
+			<span class="border-2 border-white w-10 group-hover:border-green-400 transition duration-400"></span>
+			<span class="border-2 border-white w-10 group-hover:border-green-400 transition duration-400"></span>
+			<span class="border-2 border-white w-10 group-hover:border-green-400 transition duration-400"></span>
+		</section>
+	</nav>
+
+	<!--Start Page of trip -- A image Menu! -->
+	<section class="bg-main-img lg:h-[53.8rem] h-[617px] w-full bg-no-repeat bg-cover bg-fixed relative flex flex-col justify-center items-center">
+		<h1 class="text-6xl font-bold bg-white text-green-400 rounded p-2">Let Trip!</h1>
+		<h5 class="text-3xl text-white mt-2">The place to make your trip!</h5>
+	</section>
+
+	<!-- Who are we?-->
+	<section id="who-we-are" class="flex lg:flex-row flex-col justify-center items-center py-3 transition duration-900">
+		<div class="lg:w-1/3 w-2/3 rounded overflow-hidden drop-shadow-lg lg:mx-4 my-4 hover:scale-[0.95] transition duration-900">
+			<img src="./public/img/weAre.jpeg" class="w-full transition duration-900" alt="second image, talks about trip">
+		</div>
+		<div class="lg:w-1/4 w-2/3 flex flex-col justify-center items-center mx-4 ">
+			<h1 class="text-3xl font-bold p-2 text-gray-800">Who are we?</h1>
+			<span class="w-[90%] bg-gray-800 overflow-hidden rounded-full h-2 my-6 relative group">
+				<span class="w-1/2 bg-green-400 h-full rounded-full absolute top-0 left-1/4 group-hover:bg-red-400 transition duration-400"></span>
+			</span>
+			<p class="italic leading-7 mt-4 text-center"> We are a recognize company about trips, we have the best service when we talk about trips, are you a man of God? or are you a simple citizen? do not worry! We have the best services of the country!</p>
+		</div>
+	</section>
+
+	<!-- Some visited places section -->
+	<section id="some-place" class="bg-gray-800 w-full flex flex-col justify-center items-center py-4 gap-2">
+		<h1 class="text-3xl font-bold p-2 text-white">Visited Places!</h1>
+		<p class="italic text-white mx-2 text-center"> Well, in this section, we want to show you some places that you can choose then to start your next trip!</p>
+		<div class="w-5/6 my-3 flex lg:flex-row gap-4 flex-col ">
+			<!-- first card! -->
+			<div class="card lg:w-2/6 w-[90%] lg:h-[15rem] h-[25rem] flex lg:flex-row flex-col overflow-hidden rounded bg-white mx-auto ">
+				<section class="lg:w-1/2 lg:h-auto h-full w-full overflow-hidden hover:grayscale transition duration-300">
+					<img src="./public/img/canyon.jpeg" alt="" class="h-full w-full">
+				</section>
+				<section class="lg:w-1/2 w-full h-auto flex flex-col justify-center items-center gap-4 py-2">
+					<h2 class="text-xl">The Great Canyon!</h2>
+					<!--Copied Style -->
+					<span class="w-[90%] bg-gray-800 overflow-hidden rounded-full h-2 relative">
+						<span class="w-1/2 bg-green-400 h-full rounded-full absolute top-0 left-0"></span>
+					</span>
+				</section>
+			</div>
+			<!-- second card! -->
+			<div class="card lg:w-2/6 w-[90%] lg:h-[15rem] h-[25rem] flex lg:flex-row flex-col overflow-hidden rounded bg-white mx-auto">
+				<section class="lg:w-1/2 w-full lg:h-auto h-full overflow-hidden hover:grayscale transition duration-300">
+					<img src="./public/img/forest.jpeg" alt="" class="h-full w-full">
+				</section>
+				<section class="lg:w-1/2 w-full h-auto flex flex-col justify-center items-center gap-4 py-2">
+					<h2 class="text-xl">A beutiful Forest!</h2>
+					<!--Copied Style -->
+					<span class="w-[90%] bg-gray-800 overflow-hidden rounded-full h-2 relative">
+						<span class="w-1/2 bg-green-400 h-full rounded-full absolute top-0 left-0"></span>
+					</span>
+				</section>
+			</div>
+			<!-- third card! -->
+			<div class="card lg:w-2/6 w-[90%] lg:h-[15rem] h-[25rem] flex lg:flex-row flex-col overflow-hidden rounded bg-white mx-auto">
+				<section class="lg:w-1/2 w-full lg:h-auto h-full overflow-hidden hover:grayscale transition duration-300">
+					<img src="./public/img/mountain.jpeg" alt="" class="h-full w-full">
+				</section>
+				<section class="lg:w-1/2 w-full h-auto flex flex-col justify-center items-center gap-4 py-2">
+					<h2 class="text-xl">A beutiful Forest!</h2>
+					<!--Copied Style -->
+					<span class="w-[90%] bg-gray-800 overflow-hidden rounded-full h-2 relative">
+						<span class="w-1/2 bg-green-400 h-full rounded-full absolute top-0 left-0"></span>
+					</span>
+				</section>
+			</div>
+		</div>
+	</section>
+
+<!-- Skills Section of the company-->
+	<section id="our-skills" class="flex flex-col justify-center items-center my-4">
+		<div class="drop-shadow-xl p-2 rounded overflow-hidden lg:w-1/3 w-2/3">
+			<h1 class="text-3xl font-bold p-2 text-gray-800 text-center"> Our Skills! </h1>
+			<span class="w-[90%] bg-gray-800 overflow-hidden rounded-full h-2 my-6 relative group">
+				<span class="w-1/2 bg-green-400 h-full rounded-full absolute top-0 left-1/4 group-hover:bg-red-400 transition duration-400"></span>
+			</span>
+			<ul class="drop-shadow-lg w-full">
+				<li class="w-full text-xl border-b-2 border-gray-800 py-2 flex flex-row justify-between text-[1.7rem] my-2 hover:text-green-400 hover:border-green-400 transition-all duration-300"><i class="ri-service-line"></i> Great Service</li>
+				<li class="text-xl border-b-2 border-gray-800 py-2 flex flex-row justify-between text-[1.7rem] my-2 hover:text-green-400 hover:border-green-400 transition-all duration-300"><i class="ri-send-plane-fill"></i>Flexibility </li>
+				<li class="text-xl border-b-2 border-gray-800 py-2 flex flex-row justify-between text-[1.7rem] my-2 hover:text-green-400 hover:border-green-400 transition-all duration-300"><i class="ri-calendar-check-line"></i>Responsability </li>
+				<li class="text-xl border-b-2 border-gray-800 py-2 flex flex-row justify-between text-[1.7rem] my-2 hover:text-green-400 hover:border-green-400 transition-all duration-300"><i class="ri-plane-line"></i>Awesome Places </li>
+				<li class="text-xl border-b-2 border-gray-800 py-2 flex flex-row justify-between text-[1.7rem] my-2 hover:text-green-400 hover:border-green-400 transition-all duration-300"><i class="ri-heart-fill"></i>Friendly Personality </li>
+			</ul>
+		</div>
+	</section>
+
+<!-- Rating setion of the page -->
+	<section id="ratings" class="bg-gray-800 flex flex-col justify-center items-center gap-4 py-4">
+		<h1 class="text-3xl font-bold p-2 text-white">Ratings!</h1>
+		<p class="italic text-white mx-2 text-center"> Are you fearfull? Do not worry, here you can read about our clients and their satisfaction level!</p>
+		<div class="lg:w-5/6 w-full flex flex-col lg:flex-row justify-center items-center gap-5">
+			<!-- First card! -->
+			<div class="lg:w-[20%] w-5/6 bg-white drop-shadow-lg rounded flex flex-col justify-center items-center p-2">
+				<img src="./public/img/emilia.jpeg" class="w-[10rem] h-[10rem] border-4 border-green-400 rounded-full hover:grayscale transition duration-400">
+				<section class="p-2 flex flex-col justify-center items-center">
+					<h2 class="text-gray-800 text-2xl">Emilia White</h2>
+					<p class="italic text-gray-800 my-2 text-center">Oh! only that i can say it's Wow, Amazing, this is the best service ever!</p>
+					<div>
+						<i class="ri-star-fill text-green-400"></i>
+						<i class="ri-star-fill"></i>
+						<i class="ri-star-fill text-green-400"></i>
+						<i class="ri-star-fill"></i>
+						<i class="ri-star-fill text-green-400"></i>
+					</div>
+				</section>
+			</div>
+			<!-- Second card! -->
+			<div class="lg:w-[20%] w-5/6 bg-white drop-shadow-lg rounded flex flex-col justify-center items-center p-2">
+				<img src="./public/img/Carl.jpeg" class="w-[10rem] h-[10rem] border-4 border-green-400 rounded-full hover:grayscale transition duration-400">
+				<section class="p-2 flex flex-col justify-center items-center">
+					<h2 class="text-gray-800 text-2xl">Carl Dishmey</h2>
+					<p class="italic text-gray-800 my-2 text-center">Nice service, a friendly enviroment and a satisfactory trip, i do not need to say something, five stars!</p>
+					<div>
+						<i class="ri-star-fill text-green-400"></i>
+						<i class="ri-star-fill"></i>
+						<i class="ri-star-fill text-green-400"></i>
+						<i class="ri-star-fill"></i>
+						<i class="ri-star-fill text-green-400"></i>
+					</div>
+				</section>
+			</div>
+			<!-- third card! -->
+			<div class="lg:w-[20%] w-5/6 bg-white drop-shadow-lg rounded flex flex-col justify-center items-center p-2">
+				<img src="./public/img/Angela.jpeg" class="w-[10rem] h-[10rem] border-4 border-green-400 rounded-full hover:grayscale transition duration-400">
+				<section class="p-2 flex flex-col justify-center items-center">
+					<h2 class="text-gray-800 text-lg">Emilia White</h2>
+					<p class="italic text-gray-800 my-2 text-center">I never had been in a really nice trip before, i loved it, if i need to make a trip again, this is the place!</p>
+					<div>
+						<i class="ri-star-fill text-green-400"></i>
+						<i class="ri-star-fill"></i>
+						<i class="ri-star-fill text-green-400"></i>
+						<i class="ri-star-fill"></i>
+						<i class="ri-star-fill text-green-400"></i>
+					</div>
+				</section>
+			</div>
+		</div>
+	</section>
+
+	<!-- contact us! -->
+	<section id="contact-us" class="w-full flex flex-col justify-center items-center p-2 my-3 drop-shadow-lg">
+		<h1 class="text-3xl font-bold p-2 text-gray-800"> Contact Us!</h1>
+		<p class="italic text-gray-800 my-2 text-center"> Hey, are you not agree yet? What are you waiting? Come and feel yourself our services</p>
+		<!-- form! - not functional... -->
+		<form class="lg:w-1/3 flex flex-col rounded drop-shadow-lg justify-center items-center gap-5" id="formContactUs">
+			<label class="text-xl my-2 flex flex-col justify-center items-center gap-3">
+				Name: <input type="text" name="name" class="bg-green-400 appearance-none leading-tight p-2 text-white border-b-2 border-green-400 outline-none">
+			</label>
+			<label class="text-xl my-2 flex flex-col justify-center items-center gap-3">
+				Email: <input type="email" name="form" class="bg-green-400 appearance-none leading-tight p-2 text-white border-b-2 border-green-400 outline-none">
+			</label>
+			<label class="text-xl my-2 flex flex-col justify-center items-center gap-3">
+				Desc: <textarea name="desc" id="" cols="23" rows="4" class="bg-green-400 appearance-none leading-tight p-2 text-white border-b-2 border-green-400 outline-none resize-none"></textarea>
+			</label>
+			<button class="bg-green-400 rounded bold text-white w-24 text-xl" id="contactButton">Send!</button>
+		</form>
+	</section>
+
+	<section class="bg-gray-800 flex flex-col justify-center items-center py-2 w-full">
+		<h1 class="text-2xl font-bold p-2 text-white"> LetTrip © CopyRight </h1>
+		<span class="border-b-2 border-slate-100 w-5/6 my-3	"></span>
+		<section class="w-5/6 flex flex-row justify-between items-center">
+			 <span class="p-2 rounded font-bold text-xl border-2 border-green-400 text-green-400">
+			 	Designed By On3l7d15h
+			 </span>
+			 <div class="flex flex-row justify-evenly items-center p-2">
+			 	<a href="https://www.facebook.com/onell.dishmey.5" class="text-green-400 hover:text-white transition duration-300"><i class="text-3xl scale-2 ri-facebook-box-fill"></i></a>
+					<a href="https://github.com/On3l7d15h" class="text-green-400 hover:text-white transition duration-300"><i class="text-3xl ri-github-fill"></i></a>
+					<a href="https://www.linkedin.com/in/onell-antonio-dishmey-mena-7bb006220/" class="text-green-400 hover:text-white transition duration-300"><i class="text-3xl ri-linkedin-box-fill"></i></a>
+			 </div>
+		</section>
+	</section>
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+<script src="./src/index.js"></script>
+</body>
+</html>
