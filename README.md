@@ -25,6 +25,6 @@ const usedTechnologies: technologies {
 
 ---
 
-![](/home/on3l7d15h/Escritorio/Tecnologías/Páginas%20Simples/With%20CSS%20Framework/TripPage/public/img/preview.png)
+![](public/img/preview.png)
 
 So... Enjoy!
